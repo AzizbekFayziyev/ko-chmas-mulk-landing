@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyChUhRdKkqhGcdCPbR2DbhB15iVD6LD2Dk",
-  authDomain: "khusniddin-771e8.firebaseapp.com",
-  databaseURL: "https://khusniddin-771e8-default-rtdb.firebaseio.com",
-  projectId: "khusniddin-771e8",
-  storageBucket: "khusniddin-771e8.appspot.com",
-  messagingSenderId: "545885442460",
-  appId: "1:545885442460:web:71be747d620bad68c03859"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  databaseURL: import.meta.env.VITE_DATABASEURL,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
